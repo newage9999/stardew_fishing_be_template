@@ -1,0 +1,33 @@
+{
+  "name": "stardew_fishing",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "jest --bail --runInBand --clearCache && jest --bail --runInBand"
+  },
+  "dependencies": {
+    "cors": "",
+    "express": "",
+    "ws": ""
+  },
+  "devDependencies": {
+    "@babel/core": "",
+    "@babel/preset-env": "",
+    "babel-jest": "",
+    "jest": ""
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "fakeTimers": {
+      "enableGlobally": true,
+      "legacyFakeTimers": false
+    },
+    "testSequencer": "<rootDir>/tests/customTestSequencer.cjs"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  }
+}
