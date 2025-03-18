@@ -30,6 +30,24 @@ export const DIFFICULTY_TO_FISH_SPEED = {
     'high':   5.0 / 100.0,
     'legend': FISH_MAX_SPEED
 };
+export const DIFFICULTY_TO_FISH_NAME = {
+    'low': 'Crab',
+    'medium': 'Pufferfish',
+    'high': 'Tuna',
+    'legend': 'Legend'
+};
+export const DIFFICULTY_TO_FISH_MIN_LENGTH = {
+    'low': 1,
+    'medium': 1,
+    'high': 12,
+    'legend': 49
+};
+export const DIFFICULTY_TO_FISH_MAX_LENGTH = {
+    'low': 20,
+    'medium': 37,
+    'high': 61,
+    'legend': 51
+};
 
 export const calculateAnimationDuration = (start, end, speed) => {
     const durationNumber = Math.max(Math.abs((end - start)) / speed, 0);
