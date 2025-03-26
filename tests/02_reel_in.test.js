@@ -59,7 +59,7 @@ test('Game::reelIn() test', done => {
 
                 result = game.reelIn();
                 // Si ahora intentamos volver a llamar a reelIn(), debería indicarnos que ya nos encontramos en el popup de pesca
-                expect(result).toStrictEqual({errorCode: 'standing'});
+                expect(result).toStrictEqual({errorCode: 'playing_minigame'});
                 
                 done();
 
